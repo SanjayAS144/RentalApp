@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "768500964481",
+    "firebase_url": "https://hackathon-fa66b.firebaseio.com",
+    "project_id": "hackathon-fa66b",
+    "storage_bucket": "hackathon-fa66b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768500964481:android:672b4c19ade0476cb88180",
+        "android_client_info": {
+          "package_name": "com.bmsit.rentalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768500964481-tvucora9hm7co624dn3sb2dnu81qnit0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvNPWWMAHxG70eVBbir_56ASsC5-F6oDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768500964481-tvucora9hm7co624dn3sb2dnu81qnit0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

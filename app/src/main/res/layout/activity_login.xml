@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".StartUpPage.LoginActivity"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/loginpageasset2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/InputLayout"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Welcome to"
+            android:letterSpacing="0.05"
+            android:textColor="#000"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="RentalAPP"
+            android:layout_marginTop="-5dp"
+            android:letterSpacing="0.05"
+            android:textColor="#00C2C2"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your number and search for your \nneeds and get them for Rent."
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="#939393"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:ccp_showArrow="false"
+                android:gravity="center"
+                app:ccp_showFlag="false"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="false"
+                android:id="@+id/ccp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_no_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                app:hintTextColor="#BFBFBF"
+                app:startIconDrawable="@drawable/phone_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@android:color/darker_gray"
+                app:boxStrokeColor="@android:color/transparent"
+                app:boxStrokeWidth="1dp"
+                app:boxBackgroundColor="@android:color/transparent">
+
+
+                <EditText
+                    android:id="@+id/phone_no_input_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:inputType="phone"
+                    android:letterSpacing="0.1"
+                    android:textSize="19sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="#00C2C2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:id="@+id/send_otp_button"
+            app:cornerRadius="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/VerifyLayout"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Welcome to"
+            android:letterSpacing="0.05"
+            android:textColor="#000"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="RentalAPP"
+            android:layout_marginTop="-5dp"
+            android:letterSpacing="0.05"
+            android:textColor="#00C2C2"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter The OTP."
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:id="@+id/enter_otp_text_view"
+            android:textColor="#939393"
+            android:textStyle="bold"/>
+
+        <com.chaos.view.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pin_text"
+            android:layout_below="@id/enter_otp_text_view"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            app:itemCount="6"
+            style="@style/PinWidget.PinView"
+            app:itemRadius="5dp"
+            android:inputType="phone"
+            app:itemSpacing="5dp"
+            android:layout_gravity="center"
+            app:itemHeight="35dp"
+            app:itemWidth="35dp"
+            android:padding="5dp"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pin_text"
+            android:layout_gravity="center"
+            android:id="@+id/didnt_get_otp_container"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/didnt_get_otp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn't get the OTP?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/didnt_get_otp_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="RESEND OTP."
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:textColor="#5663ff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Timer_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/didnt_get_otp_container"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="50dp"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="invisible"
+            tools:text="Time" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="#00C2C2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Verify"
+            android:id="@+id/VerifyBtn"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
