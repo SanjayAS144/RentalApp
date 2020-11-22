@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentalItems.ProductDescriptionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:tint="#00C2C2"
+            android:background="#00000000"
+            android:elevation="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginStart="20dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:elevation="8dp"
+            app:cardMaxElevation="8dp"
+            android:outlineAmbientShadowColor="#000"
+            app:cardCornerRadius="25dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/like"
+                android:tint="#9E9E9E"
+                android:layout_gravity="center"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/productImage"
+                android:src="@drawable/houseimage4"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30000 Rs /"
+                android:textColor="#00C2C2"
+                android:textSize="22sp"
+                android:layout_below="@id/productImage"
+                android:id="@+id/productprice"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  month"
+                android:layout_below="@id/productImage"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/productprice"
+                android:textSize="22sp"
+                android:id="@+id/month2"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted on 20-11-2000"
+                android:layout_below="@id/productImage"
+                android:textColor="#B1B1B1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:textSize="12sp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productprice"
+                android:layout_marginStart="20dp"
+                android:id="@+id/locationdescp"
+                android:fontFamily="@font/montserrat"
+                android:text="1800 SQ FT for Rent in Davangere \nclose to vidya nagar circle."
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/locationdescp"
+                android:id="@+id/layout1"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="#00C2C2"
+                    android:src="@drawable/ic_baseline_place_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#843/2 11th cross..."
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:id="@+id/location4"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/price1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/layout1"
+                android:id="@+id/view"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@id/view"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:id="@+id/overview"
+                android:textColor="#3E3E3E"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overview"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/review"
+                android:textColor="#6E6E6E"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                android:layout_marginStart="20dp"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_below="@id/review"
+                android:id="@+id/layout3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="#00C2C2"
+                    android:src="@drawable/bed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 Beds"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#737373"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/price1"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="#00C2C2"
+                    android:layout_marginStart="100dp"
+                    android:src="@drawable/balcony" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2 Balcony"
+                    android:textColor="#7A7A7A"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/price1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/layout3"
+                android:id="@+id/layout4"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="#00C2C2"
+                    android:src="@drawable/bath" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Bath"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#737373"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/price1"/>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="#00C2C2"
+                    android:layout_marginStart="100dp"
+                    android:src="@drawable/appartment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Family Apartment"
+                    android:textColor="#7A7A7A"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_below="@id/price1"/>
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="#00C2C2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layout4"
+                android:text="Interested"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:id="@+id/interested"
+                app:cornerRadius="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginEnd="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

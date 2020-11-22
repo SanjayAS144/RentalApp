@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-40dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/carimage"
+                android:src="@drawable/carimage5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:id="@+id/carname"
+                android:layout_toLeftOf="@id/carimage"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lexus ES"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="22sp"
+                    android:id="@+id/carproductname"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#00C2C2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hybrid"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#A6A6A6"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="1000 RS  /"
+                        android:id="@+id/price"
+                        android:layout_marginStart="20dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textColor="#F46E64"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/price"
+                        android:layout_marginBottom="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="  hour" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/completed"
+                        android:id="@+id/safe"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/safe"
+                        android:layout_centerVertical="true"
+                        android:text="  Safe Vehicle" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                android:layout_height="130dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:id="@+id/productimage"-->
+<!--                    android:src="@drawable/houseimage5"-->
+<!--                    android:scaleType="centerCrop"/>-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_gravity="bottom|end"-->
+<!--                    android:elevation="8dp"-->
+<!--                    app:cardMaxElevation="8dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:outlineAmbientShadowColor="#000"-->
+<!--                    app:cardCornerRadius="15dp">-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:src="@drawable/like"-->
+<!--                        android:tint="#9E9E9E"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        />-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:background="@android:color/transparent">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="30000 Rs /"-->
+<!--                    android:textColor="#00C2C2"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:id="@+id/productprice"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="@font/montserrat_bold"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="  month"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:layout_toRightOf="@id/productprice"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:id="@+id/month2"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:fontFamily="@font/montserrat"-->
+<!--                    />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_below="@id/productprice"-->
+<!--                    android:id="@+id/layout1"-->
+<!--                    android:layout_marginStart="6dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:tint="#00C2C2"-->
+<!--                        android:src="@drawable/ic_baseline_place_24" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="#843/2 11th cross..."-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:id="@+id/location4"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:layout_below="@id/price1"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_below="@id/layout1"-->
+<!--                    android:id="@+id/layout2"-->
+<!--                    android:layout_marginStart="7dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:tint="#353232"-->
+<!--                        android:src="@drawable/bed" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=" 4  "-->
+<!--                        android:textColor="#737373"-->
+<!--                        android:textSize="12sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:layout_below="@id/price1"/>-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:tint="#353232"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:src="@drawable/balcony" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=" 2 Balcony"-->
+<!--                        android:textColor="#7A7A7A"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:layout_below="@id/price1"/>-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:tint="#353232"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:src="@drawable/cube" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="  1800Sq.ft"-->
+<!--                        android:textColor="#7A7A7A"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:layout_below="@id/price1"/>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_below="@id/layout2"-->
+<!--                    android:id="@+id/layout3"-->
+<!--                    android:layout_marginStart="6dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:tint="#353232"-->
+<!--                        android:src="@drawable/bath" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="2 Bath"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:textColor="#737373"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:layout_below="@id/price1"/>-->
+
+<!--                    <com.google.android.material.imageview.ShapeableImageView-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:tint="#353232"-->
+<!--                        android:layout_marginStart="15dp"-->
+<!--                        android:src="@drawable/appartment" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=" Family Apartment"-->
+<!--                        android:textColor="#7A7A7A"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/montserrat"-->
+<!--                        android:layout_below="@id/price1"/>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </RelativeLayout>-->
+<!--        </LinearLayout>-->
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

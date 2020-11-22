@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RentalItems.HouseRentActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchcard"
+        app:strokeWidth="0.05dp"
+        app:strokeColor="#474747"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_gravity="center_vertical"
+                android:tint="#00C2C2"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search here...."
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:textColor="#AAAAAA"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property near you"
+        android:textColor="#000"
+        android:id="@+id/property"
+        android:layout_below="@id/searchcard"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/salsa"
+        android:textSize="22sp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/property"
+        android:id="@+id/nearyou"
+        android:scrollbarSize="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/houseimage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/houseimage10"
+                        />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/houseimage2"
+                        android:layout_marginTop="-60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:id="@+id/price2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_below="@id/houseimage2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  month"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price2"
+                        android:textSize="20sp"
+                        android:id="@+id/month2"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@id/houseimage2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/price2"
+                        android:id="@+id/detaillayout3"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#00C2C2"
+                            android:src="@drawable/ic_baseline_place_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#843/2 11th cross..."
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:id="@+id/location4"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#878787"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/appartment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family Apartment"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/detaillayout3"
+                        android:id="@+id/detaillayout4"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:src="@drawable/bed" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  4"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/bath" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Bath"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/balcony" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Balcony"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/cube" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  1800Sq.ft"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card2"
+                android:layout_toRightOf="@id/card1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/houseimage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/houseimage1"
+                        />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/houseimage1"
+                        android:layout_marginTop="-60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:id="@+id/price1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_below="@id/houseimage1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  month"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price1"
+                        android:textSize="20sp"
+                        android:id="@+id/month1"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@id/houseimage1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/price1"
+                        android:id="@+id/detaillayout1"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#00C2C2"
+                            android:src="@drawable/ic_baseline_place_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#843/2 11th cross..."
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:id="@+id/location1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#878787"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/appartment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family Apartment"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/detaillayout1"
+                        android:id="@+id/detaillayout2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:src="@drawable/bed" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  4"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/bath" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Bath"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/balcony" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Balcony"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/cube" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  1800Sq.ft"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card3"
+                android:layout_toRightOf="@id/card2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/houseimage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/houseimage3"
+                        />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/houseimage3"
+                        android:layout_marginTop="-60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:id="@+id/price3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_below="@id/houseimage3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  month"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price3"
+                        android:textSize="20sp"
+                        android:id="@+id/month3"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@id/houseimage3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/price3"
+                        android:id="@+id/detaillayout5"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#00C2C2"
+                            android:src="@drawable/ic_baseline_place_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#843/2 11th cross..."
+                            android:textColor="#000"
+                            android:textSize="12sp"
+
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price3"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#878787"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/appartment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family Apartment"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price3"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/detaillayout5"
+                        android:id="@+id/detaillayout6"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:src="@drawable/bed" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  4"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/bath" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Bath"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/balcony" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Balcony"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/cube" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  1800Sq.ft"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card4"
+                android:layout_toRightOf="@id/card3"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/houseimage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/houseimage4"
+                        />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/houseimage4"
+                        android:layout_marginTop="-60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="55000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:id="@+id/price4"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_below="@id/houseimage4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  month"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price4"
+                        android:textSize="20sp"
+                        android:id="@+id/month4"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_below="@id/houseimage4"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/price4"
+                        android:id="@+id/detaillayout7"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#00C2C2"
+                            android:src="@drawable/ic_baseline_place_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#843/2 11th cross..."
+                            android:textColor="#000"
+                            android:textSize="12sp"
+
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price4"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#878787"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/appartment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family Apartment"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price3"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/detaillayout7"
+                        android:id="@+id/detaillayout8"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:src="@drawable/bed" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  4"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/bath" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Bath"
+                            android:textColor="#737373"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/balcony" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 2 Balcony"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:tint="#353232"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/cube" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  1800Sq.ft"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat for Rent"
+        android:textSize="22sp"
+        android:fontFamily="@font/salsa"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/nearyou"
+        android:id="@+id/forrent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/houseview"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/forrent"
+        />
+
+</RelativeLayout>

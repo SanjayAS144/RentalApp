@@ -15,4 +15,21 @@
         <item name="android:statusBarColor">#E5F9F9</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="HomeActivity" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="android:statusBarColor">#f1f3f3</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">#000</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:statusBarColor">#ffffff</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">#AEC2D6EC</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
 </resources>

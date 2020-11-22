@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bmsit.rentalapp">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -11,16 +14,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RentalAPP">
-        <activity android:name=".UserInfo.UserLocationActivity"></activity>
+        <activity android:name=".RentalItems.BikeRentActivity"></activity>
+        <activity android:name=".RentalItems.HouseRentActivity" />
+        <activity android:name=".RentalItems.LessorActivity" />
+        <activity android:name=".RentalItems.ProductDescriptionActivity" />
+        <activity android:name=".RentalItems.CarRentActivity" />
+        <activity android:name=".UserInfo.UserLocationActivity" />
         <activity android:name=".UserInfo.UserInfoActivity" />
         <activity android:name=".StartUpPage.LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

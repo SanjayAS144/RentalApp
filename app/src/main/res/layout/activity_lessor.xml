@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RentalItems.LessorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroolview"
+        android:layout_above="@id/btnlayout"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mapbox_ic_arrow_back"
+                    android:layout_alignParentEnd="true"
+                    android:tint="#00C2C2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lessor Details"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/salsa"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    app:cardCornerRadius="50dp"
+                    android:id="@+id/imageCard"
+                    android:layout_height="100dp">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/potrait"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@id/imageCard"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alex"
+                        android:id="@+id/lessorname"
+                        android:layout_marginStart="20dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/montserrat_bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/lessorname"
+                        android:id="@+id/layout1"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="#00C2C2"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/ic_baseline_place_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#843/2 11th cross near bellary siddamma park davangere..."
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            android:id="@+id/location4"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_below="@id/price1"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:fontFamily="@font/salsa"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email : "
+                    android:id="@+id/email"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="example@gnail.com"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_toRightOf="@id/email"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone no : "
+                    android:id="@+id/phone"
+                    android:layout_below="@id/email"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9620544201"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:layout_below="@id/email"
+                    android:layout_toRightOf="@id/phone"
+                    android:fontFamily="@font/montserrat"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trust Factor"
+                android:layout_marginStart="20dp"
+                android:textColor="#000"
+                android:fontFamily="@font/salsa"
+                android:textSize="20sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:progress="80"
+                android:layerType="software"
+                android:indeterminate="false"
+                android:layout_marginTop="20dp"
+                android:elevation="8dp"
+                android:outlineAmbientShadowColor="#000"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highly Trusted Lessor: "
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overview"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/review"
+                android:textColor="#6E6E6E"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                android:layout_marginStart="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/salsa"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/salsa"
+                    />
+            </RelativeLayout>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:rating="4.5"
+                android:numStars="5"
+                android:progressTint="#00C2C2"
+                android:progressBackgroundTint="#226060"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overview"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#6E6E6E"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                android:layout_marginStart="20dp"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:rating="4.5"
+                android:numStars="5"
+                android:layout_marginTop="10dp"
+                android:progressTint="#00C2C2"
+                android:progressBackgroundTint="#226060"
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/overview"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#6E6E6E"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="3"
+                android:layout_marginBottom="20dp"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/btnlayout"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_height="80dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            app:cornerRadius="10dp"
+            android:text="Call Him"
+            android:textAllCaps="false"
+            android:backgroundTint="#00C2C2"
+            android:layout_gravity="center_vertical"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#00C2C2"
+            android:layout_weight="1"
+            app:cornerRadius="10dp"
+            android:text="Start a Chat"
+            android:textAllCaps="false"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

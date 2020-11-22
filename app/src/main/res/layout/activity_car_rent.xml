@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RentalItems.CarRentActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/searchcard"
+        app:strokeWidth="0.05dp"
+        app:strokeColor="#474747"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_gravity="center_vertical"
+                android:tint="#00C2C2"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search here...."
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:textColor="#AAAAAA"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars near you"
+        android:textColor="#000"
+        android:id="@+id/property"
+        android:layout_below="@id/searchcard"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/salsa"
+        android:textSize="22sp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/property"
+        android:id="@+id/nearyou"
+        android:scrollbarSize="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="220dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/houseimage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carimage2" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/houseimage2"
+                        android:layout_marginTop="-60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/price2"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  day"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price2"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/month2"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card2"
+                android:layout_toRightOf="@id/card1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="220dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carimage3" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-60dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/price3"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  day"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price3"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/month3"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card3"
+                android:layout_toRightOf="@id/card2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="220dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carimage4" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-60dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/price4"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  day"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price4"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/month4"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:backgroundTint="#fff"
+                android:id="@+id/card4"
+                android:layout_toRightOf="@id/card3"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                android:outlineSpotShadowColor="#000"
+                android:layout_height="220dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carimage1" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-60dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:elevation="8dp"
+                        app:cardMaxElevation="8dp"
+                        android:outlineAmbientShadowColor="#000"
+                        app:cardCornerRadius="25dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/like"
+                            android:tint="#9E9E9E"
+                            android:layout_gravity="center"
+                            />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000 Rs /"
+                        android:textColor="#00C2C2"
+                        android:textSize="20sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/price5"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  day"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@id/price5"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/month5"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars for Rent"
+        android:textSize="22sp"
+        android:fontFamily="@font/salsa"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/nearyou"
+        android:id="@+id/forrent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/houseview"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/forrent"
+        />
+
+</RelativeLayout>

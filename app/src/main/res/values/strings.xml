@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RentalAPP</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2FuamF5NDMwIiwiYSI6ImNraHJmZ3B1YTFmbnkzMms2czRuOGliNXEifQ.H4b77DL9jFTl2fGIkPdskQ</string>
 </resources>
